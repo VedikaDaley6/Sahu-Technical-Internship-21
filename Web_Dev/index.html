@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ShopStop Website</title>
+        <link href="fa/css/svg-with-js.css" rel= stylesheet>
+        <link href="CSS/jquery.bxslider.min.css" rel= stylesheet>
+        <link href="CSS/owl.carousel.min.css" rel= stylesheet>
+        <link href="CSS/owl.theme.default.min.css" rel= stylesheet>
+        <link href="CSS/bootstrapl.min.css" rel= stylesheet>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="CSS/style.css" rel= stylesheet>
+        <link href="CSS/media.css" rel= stylesheet>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="JS/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="JS/owl.carousel.js"></script>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="fa/js/all.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                $('.counter').each(function () {
+                    $(this).prop('Counter',0).animate({
+                        Counter: $(this).text()
+                    }, 
+                    {
+                        duration: 4000,
+                        easing: 'swing',
+                        step: function (now) {
+                        $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+            });
+        </script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                 <div class="row">
+                    <div class="navbar-header" style="float: left;">
+                        <span><a href=""><i class="fab fa-facebook-f icon-color"></i></a></span>&nbsp&nbsp&nbsp
+                        <span><a href=""><i class="fab fa-twitter icon-color"></i></a></span>&nbsp&nbsp&nbsp
+                        <span><a href=""><i class="fab fa-linkedin-in icon-color"></i></a></span>&nbsp&nbsp&nbsp
+                        <span><a href=""><i class="fab fa-google-plus-g icon-color"></i></a></span>&nbsp&nbsp&nbsp
+                        <span><a href=""><i class="fab fa-youtube icon-color"></i></a></span>&nbsp&nbsp&nbsp
+                    </div>
+                    <div>
+                        <ul class="nav navbar-nav" style="float:right">
+                            <li><a href=""><i class="fas fa-shopping-cart icon-color"></i> 0</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"> </i>REGISTER</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"> </i>LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo.PNG" width="120" height="50px">
+                </div>
+                <nav>
+                    <div class="topnav" float="right" id="myTopnav">
+                        <a class="dropbtn">Home</a>
+                        <a class="dropbtn">Search
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a class="dropbtn">Compare
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a class="dropbtn">Review
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a class="dropbtn">Services
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a class="dropbtn">Pages
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a class="dropbtn">Users
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a href=""><i class="fas fa-cog"></i></a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>   
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <ul>
+                        <li><img src="Images/img1.PNG" alt="Snow" style="width:100%;"></li>
+                    </ul>
+                    <div class="top-right">
+                        <h2 style="text-align:right">BEST SHOP FOR CAR PARTS</h2>
+                        <h1 style="text-align:right">EVERYTHING YOU WANT</h1>
+                        <p style="text-align:right">We provide always our best services for our clients and always <br>try to achieve our client's trust and satifaction.</p>
+                        <a href="" class="btn"> SHOP NOW &#8680;</a>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <ul>
+                        <li><img src="Images/img2.jpg" alt="Snow" style="width:100%;"></li>
+                    </ul>
+                    <div class="top-right">
+                        <h2 style="text-align:right">BEST SHOP FOR CAR PARTS</h2>
+                        <h1 style="text-align:right">EVERYTHING YOU WANT</h1>
+                        <p style="text-align:right">We provide always our best services for our clients and always <br>try to achieve our client's trust and satifaction.</p>
+                        <a href="" class="btn"> SHOP NOW &#8680;</a>
+                    </div>
+                  </div>
+                
+                  <div class="item">
+                    <ul>
+                        <li><img src="Images/img3.jpg" alt="Snow" style="width:100%;"></li>
+                    </ul>
+                    <div class="top-right">
+                        <h2 style="text-align:right">BEST SHOP FOR CAR PARTS</h2>
+                        <h1 style="text-align:right">EVERYTHING YOU WANT</h1>
+                        <p style="text-align:right">We provide always our best services for our clients and always <br>try to achieve our client's trust and satifaction.</p>
+                        <a href="" class="btn"> SHOP NOW &#8680;</a>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!------ Car Accessories ------>
+        <div class="accessories">
+            <h1><span>Car</span> Accessories</h1>
+            <hr class="new">
+            <hr class="new1">
+            <h3>Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet consectetuer.</h3>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Images/acc1.PNG">
+                        <h4>Steerings</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;15.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc2.PNG">
+                        <h4>Car Doors</h4>
+                        <div class="rating">
+                        <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;12.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc3.PNG">
+                        <h4>Gears</h4>
+                        <div class="rating">
+                        <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;30.00-&#163;35.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc4.PNG">
+                        <h4>Multimedia</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;25.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Images/acc5.PNG">
+                        <h4>Stylish Key</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;20.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc6.PNG">
+                        <h4>Sound System</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;30.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc7.PNG">
+                        <h4>Diesel Engine</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;7.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc8.PNG">
+                        <h4>Filters</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;7.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-1a">
+                <ul>
+                    <li><img src="Images/image2.PNG" alt="Snow" style="width:100%;"></li>
+                </ul>
+                <div class="c">
+                    <div class="four col-md-3">
+                        <div class="counter-box colored"> 
+                            <i class="fas fa-car-side fa-4x icon-color"></i>
+                            <div class="counter">1238</div>
+                            <h3>Total <span>Accessories</span></h3>
+                        </div>
+                    </div>
+                    <div class="four col-md-3">
+                        <div class="counter-box"> 
+                            <i class="fas fa-wrench fa-4x icon-color"></i>
+                            <div class="counter">820</div>
+                            <h3>Spare <span>Parts</span></h3>
+                        </div>
+                    </div>
+                    <div class="four col-md-3">
+                        <div class="counter-box"> 
+                            <i class="far fa-heart fa-4x icon-color"></i>
+                            <div class="counter">1024</div>
+                            <h3>Happy <span>Users</span></h3>
+                        </div>
+                    </div>
+                    <div class="four col-md-3">
+                        <div class="counter-box"> 
+                            <i class="fas fa-globe fa-4x icon-color"></i>
+                            <div class="counter">75</div>
+                            <h3>Expert <span>Worker</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="btn-group">
+                    <a href="" class="btn1">Car Decoration</a>
+                    <a href="" class="btn1">Modifications</a>
+                    <a href="" class="btn1">Spare Parts</a>
+                </div>
+            </div>
+        </div>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="Images/acc9.PNG">
+                    <h4>Steerings</h4>
+                    <div class="rating">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(0 Reviews)</p>
+                    </div>
+                    <p>&#163;10.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/acc7.PNG">
+                    <h4>Car Doors</h4>
+                    <div class="rating">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(0 Reviews)</p>
+                    </div>
+                    <p>&#163;7.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/acc5.PNG">
+                    <h4>Gears</h4>
+                    <div class="rating">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(0 Reviews)</p>
+                    </div>
+                    <p>&#163;20.00-&#163;35.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="Images/acc8.PNG">
+                    <h4>Multimedia</h4>
+                    <div class="rating">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <p>(0 Reviews)</p>
+                    </div>
+                    <p>&#163;7.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="row">    
+                <div class="col-1a">
+                    <ul>
+                        <li><img src="Images/image3.PNG" alt="Snow" style="width:100%;"></li>
+                    </ul>   
+                    <div class="top-center">
+                        <h2 style="text-align:center">WE ARE SINCE 1970</h2>
+                        <h1 style="text-align:center">WE PROVIDE WHAT YOU WANT</h1>
+                        <a href="contact.html" class="btn2"> CONTACT US</a>
+                        <a href="products.html" class="btn2"> VIEW SHOP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <h1><span>Fresh</span> Items</h1>
+            <hr class="new1" style="width:10%;text-align:left;margin-left: 0px;">
+            <hr class="new1" style="width:5%;text-align:left;margin-left: 0px;">
+            <h3>Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet<br> consectetuer.</h3>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="Images/acc9.PNG">
+                        <h4>Car seats</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;10.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc10.PNG">
+                        <h4>Woo Logo</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;18.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc11.PNG">
+                        <h4>Car LCD</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;7.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="Images/acc8.PNG">
+                        <h4>Filters</h4>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p>(0 Reviews)</p>
+                        </div>
+                        <p>&#163;7.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------Testimonials----->
+        <div class="container"> 
+            <div class="row">    
+                <div class="col-1a">
+                    <ul>
+                        <li><img src="Images/image4.PNG" alt="Snow" style="width:100%;"></li>
+                    </ul> 
+                    <div class="top-center1">
+                        <div class="row">
+                            <div class="col-3">
+                                <h3>VERY QUICK AND FAST SUPPORT</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="test-col-1">
+                                    <ul>
+                                        <li><img src="Images/test1.PNG"></li>
+                                        <li>
+                                            <h4>Hania Sheikh</h4>
+                                            <p>CEO Pvt. Inc.</p>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <h3>DONE IN 3 MONTHS! AWESOME</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="test-col-1">
+                                    <ul>
+                                        <li><img src="Images/test2.PNG" alt=""></li>
+                                        <li>
+                                            <h4>Humayun Sarfraz</h4>
+                                            <p>CTO Glixen Tech.</p>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <h3>JUST FABULOUS THEME</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="test-col-1">
+                                    <ul>
+                                        <li><img src="Images/test3.PNG"></li>
+                                        <li>
+                                            <h4>Arslan Tariq</h4>
+                                            <p>CTO Albana Inc.</p>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!----clients---->
+        <div class="clients">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Why choose us?</p>
+                        <h3>OUR PREMIUM CLIENTS</h3>
+                    </div>
+                    <div class="col-6">
+                        <img src="Images/logo1.PNG">
+                    </div>
+                    <div class="col-6">
+                        <img src="Images/logo2.PNG">
+                    </div>
+                    <div class="col-6">
+                        <img src="Images/logo3.PNG">
+                    </div>
+                    <div class="col-6">
+                        <img src="Images/logo4.PNG">
+                    </div>
+                    <div class="col-6">
+                        <img src="Images/logo2.PNG">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----footer---->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-3">
+                        <img src="Images/logo.PNG">
+                        <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
+                        <a><img src="Images/gplay.PNG"></a>
+                        <a><img src="Images/appstore.PNG"></a>
+                    </div>
+                    <div class="footer-col-3 col-m">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>LinkedIn</li>
+                            <li>Google</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3 col-m">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Our Services</li>
+                            <li>Blog</li>
+                            <li>Support Center</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>SignUp for Weekly Newsletter</h3>
+                        <p>We may send you information about related events, webinars,<br> products and services which we believe</p>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Enter your email address">
+                            <label for="floatingInput"></label>
+                            <button>SUBMIT</button>
+                        </div>
+                        <div contenteditable="true"></div>
+                        <p>Copyright 2017 © Theme Created By ScriptsBundle All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

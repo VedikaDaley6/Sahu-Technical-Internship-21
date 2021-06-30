@@ -1,0 +1,152 @@
+.navbar-header span{
+    background-color:rgb(81, 156, 199) ;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.topnav {
+    overflow: hidden;
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(81, 156, 199);
+    color: white;
+}
+
+
+.topnav .icon {
+    display: none;
+}
+.icon-color{
+    color: white;
+}
+.item img{
+    max-width: 100%;
+    max-height: 10%;
+    padding: 0px 0;
+    opacity: 25%;
+}
+.item ul{
+    list-style-type: none;
+    background-color: rgb(81, 156, 199);
+}
+.item h1{
+    color: white;
+    font-size: 50px;
+    line-height: 70px;
+    margin: 25px 0;
+}
+.item h2{
+    color: rgb(233, 229, 229);
+    font-size: 35px;
+    line-height: 40px;
+    margin: 25px 0;
+}
+.item p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 25px 0;
+}
+.top-right {
+    position: absolute;
+    bottom: 50px;
+    left: 130px;
+}
+.top-right p{
+    color: #ddd;
+}
+tr td h3{
+    color: rgb(81, 156, 199);
+}
+tr td h1{
+    color: black;
+}
+tr td p{
+    color: rgb(37, 35, 35);
+}
+
+tr td hr{
+    margin-right: 500px;
+    text-align: left;
+    width: 20%;
+    border-bottom: 3px solid rgb(81, 156, 199);
+}
+[contenteditable=true]:empty:before
+{
+  content: attr(placeholder);
+  display: block;
+}
+.btn{
+    background: rgb(81, 156, 199);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn :hover{
+    background: rgb(45, 147, 206)
+}
+.map-responsive{
+
+    overflow:hidden;
+    padding-left: 30px;
+    padding-bottom:56.25%;
+    
+    position:relative;
+    
+    height:0;
+    
+    
+}
+    
+.map-responsive iframe{
+    
+    left:0;
+    
+    top:0;
+    
+    width: 500vw;
+    height: 500vh;
+    
+    position:relative;
+    
+}
+.footer .container{
+    display: inline-block;
+    margin-left: 100px;
+}
+.footer-col-3{
+    padding: 20px 20px;
+    background: rgb(194, 226, 245);
+    height: 250px;
+    align-items: center;
+    float: left;
+    width: 370px;
+    justify-content: space-between;
+    margin: 0px 10px;
+    text-align: center;
+}
+.footer-col-3 h2{
+    color: black;
+}
+.footer-col-3 p{
+    color: gray;
+}
